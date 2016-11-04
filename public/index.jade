@@ -1,0 +1,38 @@
+html
+	head 
+		link(href='/css/main.css', rel='stylesheet')
+		link(href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', rel='stylesheet')
+		title FCC URL Image Search Abstraction Layer with Flickr api
+	body
+		.container		
+			.header
+				h1 FCC File Metadata Microservice
+				img(src='https://avatars.githubusercontent.com/u/4764314?v=3')
+				.icons
+					a(href='https://www.facebook.com/crumpx')
+						span.fa-stack.fa-lg
+							i.fa.fa-square-o.fa-stack-2x
+							i.fa.fa-facebook.fa-stack-1x
+
+					a(href='https://www.twitter.com/crumpz')
+						span.fa-stack.fa-lg
+							i.fa.fa-square-o.fa-stack-2x
+							i.fa.fa-twitter.fa-stack-1x
+
+					a(href='https://github.com/crumpx')
+						span.fa-stack.fa-lg
+							i.fa.fa-square-o.fa-stack-2x
+							i.fa.fa-github.fa-stack-1x		
+
+					a(href='https://www.linkedin.com/in/gang-zhao-198201')
+						span.fa-stack.fa-lg
+							i.fa.fa-square-o.fa-stack-2x
+							i.fa.fa-linkedin.fa-stack-1x			
+				p Created by Gang Zhao	
+				ol
+					li User Story: I can submit a FormData object that includes a file upload.
+					li User Story: When I submit something, I will receive the file size in bytes within the JSON response
+
+				form(name='fileuploader', enctype="multipart/form-data", method='post', action='/')
+					input(type='file',name='file', accept="*")
+					input(type="submit")
